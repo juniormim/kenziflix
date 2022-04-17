@@ -51,23 +51,115 @@ h1{
     width: 700px;
 }
 .zoom {
+    background-color: #1E1E20;
     height: 160px;
     width: 160px;
     overflow: hidden;
     border-radius: 8px;
-    border: 2px solid #ffffff;
+    border: 1.5px solid transparent; 
+       
 }
 .zoom img {
     max-width: 100%;
-    -moz-transition: all 0.1s ease;
-    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; 
 }
-.zoom:hover img{
-   -moz-transform: scale(1.28); 
-   -webkit-transform: scale(1.28);
-   transform: scale(1.28);
-}
+.user:hover img{
+    -moz-transform: scale(1.28125); 
+    -webkit-transform: scale(1.28125);
+    transform: scale(1.28125);
+    transform-origin: top;   
+ }
 h2{
     text-align: center;
+    color: #9C9C9C;
+    font-family: 'SemiBold';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;   
+}
+.user:hover h2{
+    color: #ffffff;
+    cursor: pointer;     
+}
+.user:hover .zoom{
+    border: 1.5px solid #ffffff;
+    cursor: pointer; 
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.circulo{
+    width: 53.89px;
+    height: 53.89px;
+    border:5.39px solid #6F6F70;
+    border-radius: 50%;
+}
+.user:hover .circulo{
+    border: 5.39px solid #ffffff;
 
+}
+.barra1{
+    align-items: center;
+    margin:0 auto;
+    position: relative;
+    top:26%;
+    height: 21.56px;
+    width: 0;
+    border:2.69px solid #6F6F70;
+    background-color: #6F6F70;
+    border-radius: 5px;
+}
+.barra2{
+    align-items: center;
+    margin:auto o;
+    position: relative;
+    left: 25%;
+    width: 21.56px;
+    border:2.69px solid #6F6F70;
+    background-color: #6F6F70;
+    border-radius: 5px;
+    
+}
+.user:hover .barra1{
+    border: 2.69px solid #ffffff;
+    background-color: #ffffff;
+}
+.user:hover .barra2{
+    border: 2.69px solid #ffffff;
+    background-color: #ffffff;
+
+}
+.gerenciar {
+    position: absolute;
+    margin: 0 auto;
+    top: 582px; left: 528px;
+    border: 1.5px solid #ffffff;
+    height: 50px;
+    width: 206px;
+    border-radius:8px;
+    text-align: center;
+
+
+}
+h3{
+    color: #ffffff;
+    font-family: 'Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+
+}
+.gerenciar:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.gerenciar:hover h3{
+    color: #000000;
 }
