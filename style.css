@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Medium';
+    src: url(./fontes/IBMPlexSans-Medium.ttf) format('truetype'); 
+
+}
+@font-face {
+    font-family: 'SemiBold';
+    src: url(./fontes/IBMPlexSans-SemiBold.ttf) format('truetype');
+
+}
+body{
+    background-color: black;
+
+}
+main{
+    background-color: #121214;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    height: 720px;
+    width: 1280px;
+    border-radius: 12px;
+}
+#logo {
+    background-image: url(./logo1.png);
+    height: 68px;
+    width: 229px;
+    position: absolute;
+    left: 517px;
+    top: 42px;
+    border-radius: 0px;
+    margin: auto
+}
+h1{ 
+    font-family:'SemiBold';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+    margin-left: 464px;
+    margin-top: 183px;
+    color:#ffffff;
+}
+
+.container{
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+.zoom {
+    height: 160px;
+    width: 160px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+}
+.zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+}
+.zoom:hover img{
+   -moz-transform: scale(1.28); 
+   -webkit-transform: scale(1.28);
+   transform: scale(1.28);
+}
+h2{
+    text-align: center;
+
+}
